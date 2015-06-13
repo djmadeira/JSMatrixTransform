@@ -1,0 +1,32 @@
+<head>
+  <title>Matrix Transforms</title>
+  <script src="main.js"></script>
+  <style>
+    .wrap {
+      margin-bottom: 1em;
+    }
+    img, canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Matrix Transforms in Javascript</h1>
+  <p>This is an example of a simple matrix transform in JS. View the source code to see how it was done and read <a href="http://graficaobscura.com/matrix/index.html">this</a> to learn more.</p>
+  <div class="wrap">
+    Source image
+    <img id="sourceimg" src="image.jpg" alt="Long-exposure street photo with a telephone booth in the foreground">
+  </div>
+  <div class="wrap">
+    Output
+    <canvas id="canvas" width="100" height="100">Your browser does not support canvas</canvas>
+  </div>
+  <div class="wrap">
+    <label for="intensity">
+      Intensity (enter a floating point number)
+      <input id="intensity" type="number" value="1">
+    </label>
+    <button type="button" id="saturate">Saturate</button>
+    <button type="button" id="brighten">Brighten</button>
+  </div>
+</body>
